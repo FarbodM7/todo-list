@@ -46,7 +46,7 @@ const TodoList: React.FC = () => {
         setOpen(true);
         setTimeout(() => {
             setOpen(false);
-        }, 1200);
+        }, 2000);
     };
 
     return (
