@@ -103,7 +103,7 @@ const TodoList: React.FC = () => {
                 <DialogTitle>Submitted!</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        Your task has been successfully submitted.
+                        You can review your tasks on Recent Tasks section.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
