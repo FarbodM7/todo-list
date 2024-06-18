@@ -21,7 +21,7 @@ interface Task {
 
 const initialStates = ['ToDo'];
 
-const TodoList: React.FC = () => {
+const TodoList  = () => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('ToDo');
