@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Todo.css';
 import {
     TextField,
@@ -76,7 +76,7 @@ const TodoList  = () => {
                     <InputLabel>Status</InputLabel>
                     <Select
                         value={category}
-                        onChange={(e) => setCategory(e.target.value as string)}
+                        onChange={(e) => setCategory(e.target.value)}
                         label="Status"
                     >
                         {initialStates.map((state) => (
