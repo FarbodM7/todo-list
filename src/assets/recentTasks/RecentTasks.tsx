@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './RecentTasks.css';
 import { TextField, Button, MenuItem, Select, InputLabel, FormControl } from '@mui/material';
 
@@ -18,7 +18,7 @@ const stateTransitions: { [key: string]: string[] } = {
     'Blocked': ['ToDo']
 };
 
-const RecentTasks: React.FC = () => {
+const RecentTasks = () => {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [editingIndex, setEditingIndex] = useState<number | null>(null);
     const [editTitle, setEditTitle] = useState('');
@@ -118,8 +118,12 @@ const RecentTasks: React.FC = () => {
                             <p><strong>Description:</strong> {task.description}</p>
                             <p><strong>Status:</strong> {task.category}</p>
                             {task.category === 'Deployed' ? (
-                                <p><strong>Task Completed</strong></p> &&
-                                <Button variant="contained" onClick={() => handleDeleteTask(index)}>DELETE</Button>
+                                <div>
+                                    <p><strong>Task Completed</strong></p>
+                                    <Button variant="contained" onClick={() => handleDeleteTask(index)}>DELETE</Button>
+                                </div>
+
+
                             ) : (
                                 <>
                                     <Button
