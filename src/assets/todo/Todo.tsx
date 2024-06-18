@@ -43,7 +43,7 @@ const TodoList: React.FC = () => {
         setDescription('');
         setCategory('ToDo');
         localStorage.setItem('tasks', JSON.stringify(updatedTasks));
-        setOpen(true);  // Open the modal
+        setOpen(true);
         setTimeout(() => {
             setOpen(false);
         }, 1200);
@@ -103,7 +103,7 @@ const TodoList: React.FC = () => {
                 <DialogTitle>Submitted!</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        Your task has been successfully submitted.
+                        You can review your tasks on Recent Tasks section.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
