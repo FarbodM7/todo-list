@@ -1,0 +1,78 @@
+.nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    blur(1rem)
+}
+
+.date {
+    color: rgba(7, 3, 133, 0.75);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-right: 2px solid #000000;
+    padding-right: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.4px;
+    padding-left: 1.5px;
+}
+
+.button {
+    display: flex;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgba(4, 0, 126, 0.75);
+    border: none;
+}
+
+.button-selected {
+    display: flex;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #646CFF;
+    border: none;
+}
+
+.settingButton {
+    position: fixed;
+    right: 60px;
+    display: flex;
+    padding: 0.4rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgba(4, 0, 126, 0.75);
+    border: none;
+    background-color: rgba(190, 190, 191, 0.34);
+    border-radius: 8px;
+    width: 20px;
+    justify-content: center;
+
+}
+
+.profileButton {
+    position: fixed;
+    right: 12px;
+    display: flex;
+    padding: 0.4rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgba(4, 0, 126, 0.75);
+    border: none;
+    background-color: rgba(190, 190, 191, 0.34);
+    border-radius: 8px;
+    width: 20px;
+    justify-content: center;
+}
+
