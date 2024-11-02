@@ -1,4 +1,5 @@
-import {useEffect, useState} from 'react';
+// @ts-ignore
+import React, {useEffect, useState} from 'react';
 import './NavBar.css'
 import {NavLink, Outlet} from 'react-router-dom'
 
@@ -38,11 +39,17 @@ const Navbar = () => {
                 <div className={'date'}>{date}</div>
                 <div className={'buttons'}>
                     <NavLink className={({isActive}) => isActive ? 'button-selected' : 'button'}
-                             to={'/'}><HomeOutlined/>Home</NavLink>
+                             to={'/'}><HomeOutlined/>Home
+                    </NavLink>
                     <NavLink className={({isActive}) => isActive ? 'button-selected' : 'button'}
-                             to={'todo'}><PlaylistAdd/>Add Task</NavLink>
+                             to={'todo'}><PlaylistAdd/>Add Task
+                    </NavLink>
                     <NavLink className={({isActive}) => isActive ? 'button-selected' : 'button'}
-                             to={'recent-tasks'}><PlaylistAddCheckOutlined/>Recent Tasks</NavLink>
+                             to={'recent-tasks'}><PlaylistAddCheckOutlined/>Recent Tasks
+                    </NavLink>
+                    <NavLink className={({isActive}) => isActive ? 'button-selected' : 'button'}
+                             to={'connection-status'}><PlaylistAddCheckOutlined/>Connection Status
+                    </NavLink>
                     <button className={'settingButton'}><SettingsOutlined/></button>
                     <button className={'profileButton'}><AccountCircleOutlined/></button>
                 </div>

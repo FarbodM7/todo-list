@@ -5,6 +5,7 @@ import NavBar from "./assets/navBar/NavBar.tsx";
 import Landing from "./assets/landing/Landing.tsx";
 import Todo from "./assets/todo/Todo.tsx";
 import RecentTasks from "./assets/recentTasks/RecentTasks.tsx";
+import ConnectionStatus from "./assets/connection-status-parsa/src/assets/ConnectionStatus.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                     <Route index element={<Landing/>}/>
                     <Route path={"todo"} element={<Todo/>}/>
                     <Route path={'recent-tasks'} element={<RecentTasks/>}/>
+                    <Route path={'connection-status'} element={<ConnectionStatus/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
